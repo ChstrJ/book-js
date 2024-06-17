@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My booklist app</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container mt-4 w-50">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span
+          class="text-primary"
+          >book</span
+        >list
+      </h1>
+      <div class="card shadow-sm p-4">
+        <form action="" id="book-form">
+          <div class="form-group">
+            <label for="" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" />
+          </div>
+
+          <div class="form-group">
+            <label for="" class="form-label">Author</label>
+            <input type="text" class="form-control" id="author" />
+          </div>
+
+          <div class="form-group">
+            <label for="" class="form-label">ISBN</label>
+            <input type="text" class="form-control" id="isbn" />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-block mt-4 w-100">Add boook</button>
+        </form>
+      </div>
+
+
+      <div class="table-responsive table-hover card shadow-sm p-4 mt-4">
+        <table class="table table-striped mt-4">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Isbn</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="book-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
